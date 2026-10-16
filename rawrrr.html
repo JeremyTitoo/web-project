@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil & Portofolio Saya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header>
+        <div class="logo">
+            <h1>Profil Saya</h1>
+        </div>
+        
+        <nav class="nav-links">
+            <a href="#profil">Profil</a>
+            <a href="#keahlian">Keahlian</a>
+            <a href="#hobi">Hobi</a>
+            <a href="#pengalaman">Pengalaman</a>
+            <a href="#portofolio">Portofolio</a>
+        </nav>
+
+        <!-- Tombol Ganti Tema di Header -->
+        <button id="themeToggleBtn" class="theme-toggle-btn" aria-label="Ganti Tema">
+            <span class="icon sun-icon">☀️</span>
+            <span class="icon moon-icon">🌙</span>
+            <span class="toggle-circle"></span>
+        </button>
+    </header>
+
+    <div class="container">
+
+        <!-- Bagian Profil -->
+        <section id="profil" class="profile-section">
+            <img src="foto semua ada di sni\IMG_9455.JPG" alt="Foto Profil" class="profile-img">
+            <h2 class="profile-name">Jeremy Thomas Tito</h2>
+            <p id="profileDesc" class="profile-desc">
+                Saya seorang fotografer, editor foto, dan antusias spesifikasi komputer yang menyukai dunia teknologi dan visual media.
+            </p>
+            
+            <div class="profile-actions">
+                <button id="btnUbahTeks" class="btn-ubah-teks">✏️ Ubah Teks Profil</button>
+            </div>
+        </section>
+
+        <!-- Bagian Keahlian -->
+        <section id="keahlian" class="section">
+            <h2 class="section-title">Keahlian Utama</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">📷</div>
+                    <h3>Fotografi</h3>
+                    <p>Menguasai teknik komposisi, pencahayaan, dan pengambilan gambar untuk event resmi, acara umum, maupun dokumentasi.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🎨</div>
+                    <h3>Mengedit Foto</h3>
+                    <p>Terampil menggunakan software retouching foto seperti Adobe Lightroom & Photoshop untuk penyelarasan warna dan manipulasi visual.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">💻</div>
+                    <h3>Spesifikasi Komputer</h3>
+                    <p>Ahli dalam analisis komponen PC, optimasi performa sistem, serta pemilihan spesifikasi sesuai kebutuhan.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bagian Hobi -->
+        <section id="hobi" class="section">
+            <h2 class="section-title">Hobi</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">📸</div>
+                    <h3>Hunting Foto</h3>
+                    <p>Mengeksplorasi tempat baru untuk berburu momen visual lanskap dan street photography.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🖥️</div>
+                    <h3>ngedit </h3>
+                    <p>tergantung mud aja kalau ngedit, kecuali di semangatin</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🎮</div>
+                    <h3>Gaming </h3>
+                    <p>Info mabar ff, mole, roblox, valo </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bagian Pengalaman (3 Pengalaman) -->
+        <section id="pengalaman" class="section">
+            <h2 class="section-title">Pengalaman Kerja & Organisasi</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot">1</div>
+                    <div class="timeline-content">
+                        <h3>Crew Gudang — Rasyid Foundation</h3>
+                        <div class="timeline-date">Pengalaman Kerja</div>
+                        <p>Bertanggung jawab dalam pengelolaan inventaris, penataan logistik barang, serta memastikan operasional distribusi berjalan dengan rapi dan efisien.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot">2</div>
+                    <div class="timeline-content">
+                        <h3>Fotografer — Event Natal Umum</h3>
+                        <div class="timeline-date">Pengalaman Acara Umum</div>
+                        <p>Bertindak sebagai fotografer utama untuk mengabadikan momen penting, dokumentasi panggung, serta portret pengunjung pada perayaan Natal umum.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot">3</div>
+                    <div class="timeline-content">
+                        <h3>Divisi PDD — Event Natal Sekolah</h3>
+                        <div class="timeline-date">Pengalaman Organisasi Sekolah</div>
+                        <p>Mengelola perencanaan konsep visual, dekorasi venue, dan tim dokumentasi foto/video untuk kelancaran rangkaian perayaan Natal sekolah.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bagian Portofolio / Hasil Karya (Showcase Sederhana) -->
+        <section id="portofolio" class="section">
+            <h2 class="section-title">Galeri Portofolio & Hasil Karya</h2>
+            <p class="section-subtitle">Klik pada karya untuk melihat tampilan layar penuh.</p>
+
+            <div class="showcase-container">
+                <button class="nav-btn prev-btn" id="btnPrev">&#10094;</button>
+                
+                <div class="showcase-frame" id="showcaseFrame">
+                    <div class="showcase-slide active" onclick="bukaModal(0)">
+                        <img id="img0" src="foto semua ada di sni\WhatsApp Image 2026-09-27 at 21.37.07 (1).jpeg" alt="Hasil Foto Event Natal">
+                        <div class="showcase-caption">
+                            <h3>Dokumentasi Event & Lighting</h3>
+                            <p>Hasil fotografi suasana acara dengan pencahayaan panggung penuh warna.</p>
+                        </div>
+                    </div>
+                    <div class="showcase-slide" onclick="bukaModal(1)">
+                        <img id="img1" src="foto semua ada di sni\GridArt_20261016_210006522.jpg" alt="Editing Foto & Retouching">
+                        <div class="showcase-caption">
+                            <h3>Hasil Color Grading & Retouching</h3>
+                            <p>Proses pengeditan foto portrait dan penyesuaian tonal warna visual.</p>
+                        </div>
+                    </div>
+                    <div class="showcase-slide" onclick="bukaModal(2)">
+                        <img id="img2" src="foto semua ada di sni\Screenshot_20260919_104206_TikTok.jpg" alt="Setup Komputer & High Performance PC">
+                        <div class="showcase-caption">
+                            <h3>Izin anakkk FIK</h3>
+                            <p>GAK GAYA, GAK KARYA #FIK </p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="nav-btn next-btn" id="btnNext">&#10095;</button>
+
+                <div class="dots-container" id="dotsContainer">
+                    <span class="dot active" onclick="pindahSlide(0)"></span>
+                    <span class="dot" onclick="pindahSlide(1)"></span>
+                    <span class="dot" onclick="pindahSlide(2)"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2026 Profil & Portofolio Saya. Dibuat dengan HTML, CSS, dan JavaScript.</p>
+        </footer>
+
+    </div>
+
+    <!-- Modal Pop-up Preview -->
+    <div id="modalPreview" class="modal">
+        <span class="close-modal" id="btnTutupModal">&times;</span>
+        <div class="modal-body">
+            <img id="modalImg" src="" alt="Preview Karya">
+            <div class="modal-info">
+                <h3 id="modalTitle">Judul Karya</h3>
+                <p id="modalDesc">Deskripsi detail karya...</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
